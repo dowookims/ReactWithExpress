@@ -1,13 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Customer from './components/Customer';
+
+const customer = {
+  name:"DowooKim",
+  birthday: 921124,
+  gender: "Male",
+  job: "Student"
+}
 
 function App() {
   return (
-    <div className="gray-background">
-        <img src={logo} alt="logo" />
-        <h2>Love yourself</h2><span role="img" aria-labelledby="🥰">🥰</span>
-    </div>
+    <Customer 
+      name={customer.name}
+      birthday={customer.birthday}
+      gender={customer.gender}
+      job={customer.job} />
   );
 }
 
